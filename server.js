@@ -10,6 +10,10 @@ const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to Database"));
 
+app.get ('/',(req,res)=>{
+    res.send({message:"Hey there... welcome to my blog API"})
+})
+
 app.use(express.json());
 app.use(cors());
 const blogsRouter = require("./app/routes/blogs");
