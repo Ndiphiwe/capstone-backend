@@ -1,4 +1,4 @@
-GET http://localhost:3700/users/
+GET http://localhost:3700/blogs/
 
 ###
 
