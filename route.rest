@@ -1,0 +1,112 @@
+GET http://localhost:3700/users/
+
+###
+
+GET https://movies-posbackend.herokuapp.com/user
+
+###
+
+
+POST http://localhost:3700/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWNjMWIwNDFjOTgwMGY5NTk1Zjg5YSIsImlhdCI6MTY0NjEzNTUzMiwiZXhwIjoxNjQ2MjIxOTMyfQ.okajbq1_tY-e6pUr1wlBO1_SLZSYP3bw7UurO2SMGWQ
+
+{
+    "title": "Interstellar",
+    "category": "Sci-Fi",
+    "img": "https://i.postimg.cc/ryrxJ7n0/interstellar.jpg",
+    "description": "Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.",
+    "author": "ndiphiwe"
+
+}
+
+
+###
+
+
+PATCH http://localhost:3700/movies
+Content-Type: application/json
+
+{
+
+}
+
+
+###
+
+
+DELETE http://localhost:3700/blogs/62358a7d27ea44ff79835667
+
+
+###
+
+
+GET http://localhost:3700/blogs/6228b2d2182bab91ac1fb74b
+
+###
+
+
+POST http://localhost:3700/user/signin
+Content-Type: application/json
+
+{
+    "fullname": "hello kitty",
+    "password": "japan"
+}
+
+
+###
+
+
+POST http://localhost:3700/user/signup
+Content-Type: application/json
+
+{
+    
+    "fullname": "phone",
+    "password": "case",
+    "email": "iphone@gmail.com",
+    "phone_number": "0259253477"
+    
+
+}
+
+
+###
+
+
+PATCH http://localhost:3700/user
+Content-Type: application/json
+
+{
+
+}
+
+
+###
+
+DELETE http://localhost:3700/user
+
+
+# users end
+
+
+
+###
+
+
+GET http://localhost:3700/cart
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWYyYTVmYTQ4MGI1MjA2NDc5ZDBkOCIsImlhdCI6MTY0NjIyMjU3NiwiZXhwIjoxNjQ2MzA4OTc2fQ.9WQPgfnOOlWloVellvfEKwrk57RHNAXGwuZuzJ2brlU
+
+###
+
+POST http://localhost:3700/cart/621629723d5c4a0acde78b18
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWYyYTVmYTQ4MGI1MjA2NDc5ZDBkOCIsImlhdCI6MTY0NjIyMjU3NiwiZXhwIjoxNjQ2MzA4OTc2fQ.9WQPgfnOOlWloVellvfEKwrk57RHNAXGwuZuzJ2brlU
+###
+
+
+
+DELETE http://localhost:3700/cart/621629723d5c4a0acde78b18
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWYyYTVmYTQ4MGI1MjA2NDc5ZDBkOCIsImlhdCI6MTY0NjIyMjU3NiwiZXhwIjoxNjQ2MzA4OTc2fQ.9WQPgfnOOlWloVellvfEKwrk57RHNAXGwuZuzJ2brlU
+
+###
