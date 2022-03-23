@@ -64,7 +64,7 @@ router.delete("/:id", getBlog, async (req, res) => {
     res.json({ message: "Blog Deleted" });
   } catch (err) {
     res.status(500).json({ message: err.message });
-  }
+  }async
 });
 
 async function getBlog(req, res, next) {

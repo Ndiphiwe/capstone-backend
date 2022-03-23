@@ -1,4 +1,4 @@
-// require("dotenv").config();
+require("dotenv").config();
 
 const express = require("express");
 const app = express();
@@ -22,8 +22,5 @@ const usersRouter = require("./app/routes/user");
 app.use("/users", usersRouter);
 // const signupRouter = require("./app/routes/user");
 // app.use("/signup", signupRouter);
-
-const commentsRouter = require("./app/routes/comments");
-app.use("/comments", commentsRouter);
 
 app.listen(process.env.PORT || 3700, () => console.log("Server Started"));

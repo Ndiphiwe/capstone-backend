@@ -2,21 +2,17 @@ GET http://localhost:3700/blogs/
 
 ###
 
-GET https://movies-posbackend.herokuapp.com/user
+GET http://localhost:3700/blogs/6235aea76287dd9ec3f7e913
 
 ###
 
 
-POST http://localhost:3700/blogs
+POST http://localhost:3700/blogs/6235aea76287dd9ec3f7e913
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWNjMWIwNDFjOTgwMGY5NTk1Zjg5YSIsImlhdCI6MTY0NjEzNTUzMiwiZXhwIjoxNjQ2MjIxOTMyfQ.okajbq1_tY-e6pUr1wlBO1_SLZSYP3bw7UurO2SMGWQ
 
 {
-    "title": "Interstellar",
-    "category": "Sci-Fi",
-    "img": "https://i.postimg.cc/ryrxJ7n0/interstellar.jpg",
-    "description": "Earth's future has been riddled by disasters, famines, and droughts. There is only one way to ensure mankind's survival: Interstellar travel. A newly discovered wormhole in the far reaches of our solar system allows a team of astronauts to go where no man has gone before, a planet that may have the right environment to sustain human life.",
-    "author": "ndiphiwe"
+    "comments": ["great", "not bad"]
 
 }
 
@@ -24,11 +20,12 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWNjMWIwN
 ###
 
 
-PATCH http://localhost:3700/movies
+PATCH http://localhost:3700/blogs/623afe9a1929e85464a66215
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMWNjMWIwNDFjOTgwMGY5NTk1Zjg5YSIsImlhdCI6MTY0NjEzNTUzMiwiZXhwIjoxNjQ2MjIxOTMyfQ.okajbq1_tY-e6pUr1wlBO1_SLZSYP3bw7UurO2SMGWQ
 
 {
-
+    "author": "me"
 }
 
 
